@@ -1,2 +1,3 @@
-result = concatenate_params(1, 'a', True, 'Hello')
-print(result)
+def concatenate_params(*args):
+    result = ', '.join(str(arg) for arg in args)
+    return result
