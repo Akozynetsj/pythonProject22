@@ -1,5 +1,3 @@
-def calculate_squares(**kwargs):
-    result = {}
-    for key, value in kwargs.items():
-        result[key] = value ** 2
-    return result
+def get_odd_numbers(*args):
+    odd_numbers = [num for num in args if num % 2 != 0]
+    return odd_numbers
